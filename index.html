@@ -24,5 +24,20 @@
 <p><a href="/curiosities/">interesting things</a> |
 <a href="/resources/">resources and cool websites</a>
 <p><a href="/contact/">contact</a></p>
+<button id="crackerModeBtn">enable cracker mode</button>
+<script>
+  const btn = document.getElementById("crackerModeBtn");
+  const body = document.body;
+
+  btn.addEventListener("click", () => {
+    body.classList.toggle("light-mode");
+    if (body.classList.contains("light-mode")) {
+      btn.textContent = "disable cracker mode";
+    } else {
+      btn.textContent = "enable cracker mode";
+    }
+  });
+</script>
+
 </body>
 </html>
